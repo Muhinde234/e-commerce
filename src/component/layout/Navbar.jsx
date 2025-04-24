@@ -25,31 +25,31 @@ const Navbar = () => {
         <div className="hidden md:flex items-center space-x-6">
           <Link
             to="/baby"
-            className="text-sm font-medium text-black hover:text-blue-600"
+            className="text-sm font-medium text-black hover:text-pink-600"
           >
             Baby
           </Link>
           <Link
             to="/toodler"
-            className="text-sm font-medium text-black hover:text-blue-600"
+            className="text-sm font-medium text-black hover:text-pink-600"
           >
             Toddler
           </Link>
           <Link
             to="/kid"
-            className="text-sm font-medium text-black hover:text-blue-600"
+            className="text-sm font-medium text-black hover:text-pink-600"
           >
             Kid
           </Link>
           <Link
             to="/brand"
-            className="text-sm font-medium text-black hover:text-blue-600"
+            className="text-sm font-medium text-black hover:text-pink-600"
           >
             Brands
           </Link>
           <Link
             to="/sale"
-            className="text-sm font-medium text-black hover:text-blue-600"
+            className="text-sm font-medium text-black hover:text-pink-600"
           >
             Sale
           </Link>
@@ -70,7 +70,7 @@ const Navbar = () => {
 
           <div className="relative">
             <button onClick={() => setUserMenuOpen(!userMenuOpen)}>
-              <UserCircle className="w-6 h-6 text-gray-700" />
+              <UserCircle className="w-6 h-6" />
             </button>
             {userMenuOpen && (
               <div className="absolute right-0 mt-2 w-32 bg-white border border-gray-200 rounded-md shadow-lg z-10">
@@ -91,7 +91,7 @@ const Navbar = () => {
           </div>
 
           <Link>
-            <ShoppingCart className="w-6 h-6 text-gray-700" />
+            <ShoppingCart className="w-6 h-6 " />
           </Link>
         </div>
       </nav>
@@ -101,31 +101,31 @@ const Navbar = () => {
           <div className="flex flex-col space-y-2">
             <Link
               to="/baby"
-              className="text-sm font-medium text-black hover:text-blue-600"
+              className="text-sm font-medium text-black hover:text-pink-600"
             >
               Baby
             </Link>
             <Link
               to="/toodler"
-              className="text-sm font-medium text-black hover:text-blue-600"
+              className="text-sm font-medium text-black hover:text-pink-600"
             >
               Toddler
             </Link>
             <Link
               to="/kid"
-              className="text-sm font-medium text-black hover:text-blue-600"
+              className="text-sm font-medium text-black hover:text-pink-600"
             >
               Kid
             </Link>
             <Link
               to="/brand"
-              className="text-sm font-medium text-black hover:text-blue-600"
+              className="text-sm font-medium text-black hover:text-pink-600"
             >
               Brands
             </Link>
             <Link
               to="/sale"
-              className="text-sm font-medium text-black hover:text-blue-600"
+              className="text-sm font-medium text-black hover:text-pink-600"
             >
               Sale
             </Link>
