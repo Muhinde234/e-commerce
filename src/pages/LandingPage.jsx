@@ -2,11 +2,8 @@ import Navbar from "../component/layout/Navbar";
 import baby1 from "../assets/baby1.webp";
 import Container from "../component/layout/Container";
 import { Link } from "react-router-dom";
-// import Login from "./Login";
 import Footer from "../component/layout/Footer";
-// import Register from "../pages/Register"
 import MainSection from "../component/common/MainSection";
-
 
 const LandingPage = () => {
   return (
@@ -26,13 +23,12 @@ const LandingPage = () => {
             </h1>
             <div className="flex flex-col lg:flex-row gap-10 mt-10 text-pink-500 ">
               <div className=" bg-white rounded-lg p-3">
-                <Link to="/Register" className="cursor-pointer">
-                
+                <Link to="/product" className="cursor-pointer">
                   Shop Baby Girl
                 </Link>
               </div>
               <div className=" bg-white rounded-lg p-3">
-                <Link to="/Register" className="cursor-pointer">
+                <Link to="/product" className="cursor-pointer">
                   Shop Baby Boy
                 </Link>
               </div>
@@ -58,7 +54,7 @@ const LandingPage = () => {
             <Container className="text-center">
               <div>
                 <h1 className="text-white text-xl font-bold pt-12">
-                  Become a  BabyBloom VIP
+                  Become a BabyBloom VIP
                 </h1>
                 <p className="text-white text-lg pt-4">
                   Get 15% off your first order + exclusive access to
@@ -78,11 +74,8 @@ const LandingPage = () => {
           </div>
         </div>
         <div>
-        <MainSection/>
-        
+          <MainSection />
         </div>
-        {/* <Login />
-        <Register/> */}
       </main>
       <Footer />
     </div>

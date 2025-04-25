@@ -2,13 +2,17 @@ import { useState } from "react";
 import { Search, UserCircle, ShoppingCart, Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import Container from "./Container";
+import HeroSection from "./HeroSection";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [userMenuOpen, setUserMenuOpen] = useState(false);
 
   return (
-    <Container className="mt-12">
+    <div>
+       <HeroSection/>
+    <Container >
+     
       <nav className="w-full shadow-sm border-b border-gray-200 bg-white py-4 px-6 flex items-center justify-between">
         <div className="flex items-center md:hidden">
           <button onClick={() => setMenuOpen(!menuOpen)}>
@@ -20,8 +24,6 @@ const Navbar = () => {
           </button>
         </div>
 
-       
-
         <div className="hidden md:flex items-center space-x-6">
           <Link
             to="/baby"
@@ -30,7 +32,7 @@ const Navbar = () => {
             Baby
           </Link>
           <Link
-            to="/toodler"
+            to="/toddler"
             className="text-sm font-medium text-black hover:text-pink-600"
           >
             Toddler
@@ -55,7 +57,7 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="text-2xl font-bold text-pink-300 mx-auto md:mx-0 ">
-          <Link to="/home">BabyBloom's</Link>
+          <Link to="/landingPage">BabyBloom's</Link>
         </div>
 
         <div className="flex items-center space-x-4 relative">
@@ -75,7 +77,7 @@ const Navbar = () => {
             {userMenuOpen && (
               <div className="absolute right-0 mt-2 w-32 bg-white border border-gray-200 rounded-md shadow-lg z-10">
                 <Link
-                  to="/login"
+                  to="/Login"
                   className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                 >
                   Login
@@ -90,7 +92,7 @@ const Navbar = () => {
             )}
           </div>
 
-          <Link>
+          <Link to="/Login">
             <ShoppingCart className="w-6 h-6 " />
           </Link>
         </div>
@@ -138,6 +140,7 @@ const Navbar = () => {
         </div>
       )}
     </Container>
+    </div>
   );
 };
 

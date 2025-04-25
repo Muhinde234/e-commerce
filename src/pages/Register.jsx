@@ -2,9 +2,13 @@ import { Link } from "react-router-dom";
 import Container from "../component/layout/Container";
 import Input from "../component/layout/Input";
 import { Gift, BadgePercent, ShoppingBag, List } from "lucide-react";
+import Navbar from "../component/layout/Navbar";
+import Footer from "../component/layout/Footer";
 
 const Register = () => {
   return (
+    <div>
+      <Navbar/>
     <Container>
       <div className="min-h-screen flex flex-col lg:flex-row justify-center items-center">
      
@@ -68,8 +72,8 @@ const Register = () => {
         </div>
         
        
-        <div className="hidden lg:block h-64 w-px bg-gray-300 mx-8"></div>
-        
+        <div className="hidden lg:block  h-170 w-px bg-gray-300 mx-8"></div>
+        w
        
         <div className="w-full lg:w-1/2 p-8 flex flex-col items-center">
           <div className="max-w-md w-full text-center">
@@ -100,6 +104,8 @@ const Register = () => {
         </div>
       </div>
     </Container>
+    <Footer/>
+    </div>
   );
 };
 

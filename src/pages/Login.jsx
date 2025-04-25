@@ -2,9 +2,13 @@ import { Link } from "react-router-dom";
 import Container from "../component/layout/Container";
 import Input from "../component/layout/Input";
 import { Gift, BadgePercent, ShoppingBag, ListOrdered } from "lucide-react";
+import Footer from "../component/layout/Footer";
+import Navbar from "../component/layout/Navbar";
 
 const Login = () => {
   return (
+     <div>
+      <Navbar/>
     <Container>
       <div className="min-h-screen flex flex-col lg:flex-row justify-center items-center">
       
@@ -48,7 +52,7 @@ const Login = () => {
         </div>
         
      
-        <div className="hidden lg:block h-64 w-px bg-gray-300 mx-8"></div>
+        <div className="hidden lg:block h-170 w-px bg-gray-300 mx-8"></div>
         <div className="w-full lg:w-1/2 p-8 flex flex-col items-center">
           <div className="max-w-md w-full text-center">
             <h2 className="text-2xl font-bold mb-4">New Here?</h2>
@@ -85,7 +89,10 @@ const Login = () => {
           </div>
         </div>
       </div>
+    
     </Container>
+    <Footer/>
+    </div>
   );
 };
 
