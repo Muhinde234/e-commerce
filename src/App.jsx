@@ -9,13 +9,13 @@ import Sale  from "./pages/Sale"
 import Login  from "./pages/Login"
 import Logout from "./pages/Logout"
 import  Register from "./pages/Register"
-import Product from "./pages/Product"
+import ProductPage from "./pages/ProductPage"
 
 function App() {
   return (
     <div className="font-['Poppins']">
       <Routes>
-        <Route path="/landingpage" element={<LandingPage />} />
+        <Route path="/" element={<LandingPage />} />
         <Route path="/baby" element={<Baby />} />
         <Route path="/tdodler" element={<Toddler />} />
         <Route path="/kid" element={<Kid />} />
@@ -24,7 +24,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/logout" element={<Logout />} />
         <Route path="/register" element={<Register/>}/>
-        <Route path='/product' element={<Product/>}/>
+        <Route path='/product' element={<ProductPage/>}/>
       </Routes>
       
     </div>

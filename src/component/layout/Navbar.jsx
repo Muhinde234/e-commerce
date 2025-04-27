@@ -57,7 +57,7 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="text-2xl font-bold text-pink-300 mx-auto md:mx-0 ">
-          <Link to="/landingPage">BabyBloom's</Link>
+          <Link to="/">BabyBloom's</Link>
         </div>
 
         <div className="flex items-center space-x-4 relative">

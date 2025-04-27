@@ -73,7 +73,7 @@ const Register = () => {
         
        
         <div className="hidden lg:block  h-170 w-px bg-gray-300 mx-8"></div>
-        w
+        
        
         <div className="w-full lg:w-1/2 p-8 flex flex-col items-center">
           <div className="max-w-md w-full text-center">
