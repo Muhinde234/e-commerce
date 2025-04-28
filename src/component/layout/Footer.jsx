@@ -20,7 +20,7 @@ export default function Footer() {
             </li>
             <li>
               <Link to="/rewards" className="inline-block mt-2">
-                <span className="bg-yellow-200 hover:bg-yellow-300 text-gray-800 font-medium px-3 py-1.5 rounded-md transition-colors">
+                <span className="bg-pink-200 hover:bg-pink-300 text-gray-800 font-medium px-3 py-1.5 rounded-md transition-colors">
                   BabyBloom Rewards
                 </span>
               </Link>
