@@ -10,7 +10,6 @@ const LandingPage = () => {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       <main className="flex-1">
-      
         <div
           className="w-full h-[500px] lg:min-h-screen bg-cover bg-center bg-no-repeat relative"
           style={{ backgroundImage: `url(${baby1})` }}
@@ -25,12 +24,18 @@ const LandingPage = () => {
             </h1>
             <div className="flex flex-col lg:flex-row gap-10 mt-10 text-pink-500 animate-fade-in-up delay-100">
               <div className="bg-white rounded-lg p-3 hover:scale-105 transition-transform shadow-lg">
-                <Link to="/product?category=girl" className="cursor-pointer font-semibold">
+                <Link
+                  to="/product?category=girl"
+                  className="cursor-pointer font-semibold"
+                >
                   Shop Baby Girl
                 </Link>
               </div>
               <div className="bg-white rounded-lg p-3 hover:scale-105 transition-transform shadow-lg">
-                <Link to="/product?category=boy" className="cursor-pointer font-semibold">
+                <Link
+                  to="/product?category=boy"
+                  className="cursor-pointer font-semibold"
+                >
                   Shop Baby Boy
                 </Link>
               </div>
@@ -38,7 +43,6 @@ const LandingPage = () => {
           </div>
         </div>
 
-     
         <Container>
           <div className="max-w-4xl mx-auto text-center mt-18 px-4">
             <h1 className="text-lg mb-3 text-pink-500 font-bold">
@@ -54,28 +58,32 @@ const LandingPage = () => {
           </div>
         </Container>
 
-    
         <Container className="mt-20">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
             <div className="text-center p-6 rounded-lg bg-white shadow-md hover:shadow-xl transition-shadow">
               <div className="text-4xl mb-4">👶</div>
               <h3 className="font-bold text-lg mb-2">Premium Quality</h3>
-              <p className="text-gray-600">Soft, organic fabrics that are gentle on baby's skin</p>
+              <p className="text-gray-600">
+                Soft, organic fabrics that are gentle on baby's skin
+              </p>
             </div>
             <div className="text-center p-6 rounded-lg bg-white shadow-md hover:shadow-xl transition-shadow">
               <div className="text-4xl mb-4">🚚</div>
               <h3 className="font-bold text-lg mb-2">Fast Shipping</h3>
-              <p className="text-gray-600">Get your order in 2-3 business days</p>
+              <p className="text-gray-600">
+                Get your order in 2-3 business days
+              </p>
             </div>
             <div className="text-center p-6 rounded-lg bg-white shadow-md hover:shadow-xl transition-shadow">
               <div className="text-4xl mb-4">💯</div>
-              <h3 className="font-bold text-lg mb-2">Satisfaction Guaranteed</h3>
+              <h3 className="font-bold text-lg mb-2">
+                Satisfaction Guaranteed
+              </h3>
               <p className="text-gray-600">30-day hassle-free returns</p>
             </div>
           </div>
         </Container>
 
-       
         <div className="bg-pink-300 mt-20">
           <div className="bg-pink-300 mt-20">
             <Container className="text-center">
@@ -104,6 +112,31 @@ const LandingPage = () => {
         <div>
           <MainSection />
         </div>
+        <h1 className="text-center text-2xl mb-28">What parents say</h1>
+        <Container>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-3 text-sm">
+          <div className="max-w-sm">
+            <p>
+              "The quality of Giboy clothes is amazing! My baby's skin is very
+              sensitive, and these are the only clothes that don't cause
+              irritation."
+            </p>
+            <h1 className="text-pink-500 text-lg mt-5">- Sarah M., Mother of twins</h1>
+          </div>
+          <div className="max-w-sm">
+            <p>
+              "I love how durable these clothes are. Even after multiple washes,
+              they look brand new. Definitely worth every penny!"
+            </p>
+            <h1 className="text-pink-500 text-lg mt-5">- James P., Father of a toddler</h1>
+          </div>
+          <div className="max-w-sm">
+            <p>"The designs are so cute and unique. I always get compliments on my daughter's outfits from BabyBloom."</p>
+            <h1 className="text-pink-500w text-lg mt-5">- Emma L., Mother of a 1-year-old</h1>
+          </div>
+        </div>
+        </Container>
+      
       </main>
       <Footer />
     </div>
