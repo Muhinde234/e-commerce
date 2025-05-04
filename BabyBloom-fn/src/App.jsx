@@ -11,6 +11,7 @@ import Logout from "./pages/Logout"
 import  Register from "./pages/Register"
 import ProductPage from "./pages/ProductPage"
 
+
 function App() {
   return (
     <div className="font-['Poppins']">
@@ -25,6 +26,8 @@ function App() {
         <Route path="/logout" element={<Logout />} />
         <Route path="/register" element={<Register/>}/>
         <Route path='/product' element={<ProductPage/>}/>
+        {/* <Route path='/cart' element={<CartPage/>}/> */}
+
       </Routes>
       
     </div>
