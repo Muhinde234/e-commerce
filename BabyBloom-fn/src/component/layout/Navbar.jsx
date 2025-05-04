@@ -92,7 +92,7 @@ const Navbar = () => {
             )}
           </div>
 
-          <Link to="/Login">
+          <Link to="/Register">
             <ShoppingCart className="w-6 h-6 " />
           </Link>
         </div>
